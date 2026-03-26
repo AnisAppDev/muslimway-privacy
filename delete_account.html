@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Account - MuslimWay</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            max-width: 600px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            color: #2c5364;
+            font-size: 28px;
+            margin-top: 10px;
+        }
+        .icon {
+            font-size: 60px;
+            color: #e74c3c;
+        }
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .method {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            border-left: 4px solid #e74c3c;
+        }
+        .method h3 {
+            color: #e74c3c;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .steps {
+            list-style: none;
+            counter-reset: step-counter;
+        }
+        .steps li {
+            counter-increment: step-counter;
+            margin: 10px 0;
+            padding-left: 40px;
+            position: relative;
+            color: #555;
+            line-height: 1.6;
+        }
+        .steps li::before {
+            content: counter(step-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: #2c5364;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .email-box {
+            background: #e8f4f8;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            text-align: center;
+        }
+        .email-box a {
+            color: #2c5364;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .email-box a:hover {
+            text-decoration: underline;
+        }
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .warning strong {
+            color: #856404;
+        }
+        .warning p {
+            color: #856404;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 30px;
+            border-top: 1px solid #eee;
+        }
+        .contact p {
+            color: #666;
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <div class="icon">🗑️</div>
+            <h1>MuslimWay</h1>
+        </div>
+
+        <h2>Delete Your Account</h2>
+
+        <div class="method">
+            <h3>📱 Method 1: Delete from App (Instant)</h3>
+            <ol class="steps">
+                <li>Open the MuslimWay app on your device</li>
+                <li>Go to <strong>Profile</strong> or <strong>Settings</strong></li>
+                <li>Tap on <strong>"Delete Account"</strong></li>
+                <li>Confirm the deletion</li>
+                <li>Your account and all data will be permanently deleted immediately</li>
+            </ol>
+        </div>
+
+        <div class="method">
+            <h3>📧 Method 2: Email Request (Within 48 Hours)</h3>
+            <p style="color: #555; margin-bottom: 15px;">If you cannot access the app, send us an email:</p>
+            <div class="email-box">
+                <a href="mailto:anisappdev@gmail.com?subject=Delete My MuslimWay Account&body=Please delete my MuslimWay account. My registered email is: [YOUR_EMAIL]">
+                    📧 anisappdev@gmail.com
+                </a>
+            </div>
+            <p style="color: #666; margin-top: 15px; font-size: 14px;">
+                <strong>Subject:</strong> Delete My MuslimWay Account<br>
+                <strong>Body:</strong> Include your registered email address
+            </p>
+        </div>
+
+        <div class="warning">
+            <strong>⚠️ Important Notice</strong>
+            <p>Account deletion will permanently remove:</p>
+            <ul style="margin-left: 20px; margin-top: 10px; color: #856404; font-size: 14px;">
+                <li>Your profile information</li>
+                <li>Prayer history and progress</li>
+                <li>Saved settings and preferences</li>
+                <li>All associated data</li>
+            </ul>
+            <p style="margin-top: 10px;"><strong>This action cannot be undone.</strong></p>
+        </div>
+
+        <div class="contact">
+            <p><strong>Need Help?</strong></p>
+            <p>Contact us: <a href="mailto:anisappdev@gmail.com">anisappdev@gmail.com</a></p>
+        </div>
+
+        <footer>
+            <p>© 2026 MuslimWay. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
